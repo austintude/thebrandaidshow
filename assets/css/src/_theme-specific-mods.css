@@ -26,9 +26,14 @@ body {
 }
 .site {
 	margin: 0 auto;
-	background: #f7f7f7;
+	background: #fff;
 	@media (--content-query) {
 		margin: 4rem auto 0;
+	}
+}
+.site-main {
+	@media (--content-query) {
+		margin: 6rem 0 0;
 	}
 }
 .site-title {
@@ -38,7 +43,15 @@ body {
 }
 .site-header {
 	max-width: 100vw;
-	margin-top: 4rem;
+	margin-top: 5rem;
+	min-height: 50vh;
+	@media (--wide-menu-query) {
+	min-height: 30rem;
+	}
+	@media (--sidebar-query) {
+		min-height: 44rem;
+		margin-top: 0;
+	}
 }
 .header-image {
 	/* background-color: #333; */
@@ -52,7 +65,7 @@ body {
 		display: block;
 		margin: 0 auto;
 		margin-top: -1rem;
-		max-height: 30rem;
+		max-height: 40rem;
 		/* opacity: .7; */
 	}
 	}
@@ -83,8 +96,8 @@ body {
 	/* text-transform: uppercase; */
 	text-align: center;
 	position: relative;
-    top: -0.9rem;
-    left: -3rem;
+    top: -2.9rem;
+    left: -4rem;
 	@media (--content-query) {
 		width: 50%;
 	margin-left: 25%;
@@ -97,7 +110,7 @@ body {
 }
 .titleTagWrapper {
 position: relative;
-    margin-top: -17rem;
+    margin-top: -16rem;
     text-align: left;
 	width: 100vw;
 	@media (--content-query) {
@@ -185,7 +198,9 @@ section {
 		}
 	}
 }
-
+nav button {
+	color: #fff;
+}
 .main-navigation {
 	width: 70vw;
 	& .menu {
@@ -500,8 +515,8 @@ amp-carousel,
 		& .titleShow {
 			position: relative;
 			font-size: 2rem;
-			top: 2rem;
-			left: -3rem;
+			top: -2.4rem;
+    		left: 8rem;
 			@media (--content-query) {
 				top: 3.5rem;
 				left: -5rem;
@@ -688,9 +703,7 @@ justify-self: center;
 	& main {
 		/* top: -10rem; */
 	}
-	& nav button {
-		color: #fff;
-	}
+
 	& #masthead amp-img.wp-post-image {
 		@media (--content-query) {
 			top: -2rem;

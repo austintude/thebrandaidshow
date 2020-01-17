@@ -152,20 +152,17 @@ $middle_image_1	= get_sub_field('middle_image_1');
 $middle_image_2	= get_sub_field('middle_image_2');
 ?>
 
-		<amp-img
+		<img
 		src="<?php echo $middle_image_1['url']; ?>"
-  width="640"
-			height="640"
 			layout="responsive"
-			alt="<?php echo $middle_image_1['alt']; ?>">
-		</amp-img>
-		<amp-img
+			lightbox
+			alt="<?php echo $middle_image_1['alt']; ?>"/>
+
+		<img
 		src="<?php echo $middle_image_2['url']; ?>"
-  width="640"
-			height="640"
 			layout="responsive"
-			alt="<?php echo $middle_image_2['alt']; ?>">
-		</amp-img>
+			lightbox
+			alt="<?php echo $middle_image_2['alt']; ?>"/>
 		<?php endwhile; ?>
 </div>
 </div>
@@ -178,20 +175,16 @@ $middle_image_2	= get_sub_field('middle_image_2');
 $right_image_1	= get_sub_field('right_image_1');
 $right_image_2	= get_sub_field('right_image_2');
 ?>
-		<amp-img
+		<img
 		src="<?php echo $right_image_1['url']; ?>"
-  width="640"
-			height="640"
+		lightbox
 			layout="responsive"
-			alt="<?php echo $right_image_1['alt']; ?>">
-		</amp-img>
-		<amp-img
+			alt="<?php echo $right_image_1['alt']; ?>"/>
+		<img
 		src="<?php echo $right_image_2['url']; ?>"
-  width="640"
-			height="640"
+		lightbox
 			layout="responsive"
-			alt="<?php echo $right_image_2['alt']; ?>">
-		</amp-img>
+			alt="<?php echo $right_image_2['alt']; ?>"/>
 		<?php endwhile; ?>
 </div>
 </div>

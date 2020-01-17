@@ -16,8 +16,8 @@ namespace WP_Rig\WP_Rig;
 </div>
 <?php the_custom_logo(); ?>
 <div class="titleTagWrapper">
-		<h1 class="site-title"><span class="titleThe">The</span> Brand Aid <span class="titleShow">Show</span></h1>
-		<h2 class="tagline"><?php bloginfo( 'description' ); ?></h2>
+		<!-- <h1 class="site-title"><span class="titleThe">The</span> Brand Aid <span class="titleShow">Show</span></h1>
+		<h2 class="tagline"><?php bloginfo( 'description' ); ?></h2> -->
 </div>
 
 </div><!-- .site-branding -->

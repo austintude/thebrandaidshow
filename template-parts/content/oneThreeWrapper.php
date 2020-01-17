@@ -6,6 +6,7 @@
  */
 
 namespace WP_Rig\WP_Rig;
+
 $leftonethirdblock	= get_field('leftonethirdblock');
 $righttwothirdsblock	= get_field('righttwothirdsblock');
 $cta_form_url			= get_field('cta_form_url');
