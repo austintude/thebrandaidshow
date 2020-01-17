@@ -1,0 +1,62 @@
+
+@supports (grid-area:auto){
+	.onethreewrapper {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+		"cta"
+		"right"
+		"left";
+		& .leftOneThirdBlock {
+			grid-area: left;
+		& img {
+		}
+	}
+	& .rightTwoThirdsBlock {
+		grid-area: right;
+		padding: 0;
+    	text-align: justify;
+	}
+	& .ctaButton {
+		width: 100vw;
+		display: grid;
+		justify-content: center;
+
+		& .ctaButtonImg {
+			grid-column: col / span 1;
+			grid-row: row 1;
+			z-index: 1;
+		}
+		& .ctaButtonText {
+			grid-column: col / span 1;
+			grid-row: row 1;
+			z-index: 2;
+			margin-top: 2.2rem;
+		}
+			}
+	@media (--content-query) {
+		grid-template-columns: 63vw 35vw;
+		grid-template-areas:
+		"cta cta"
+		"left right";
+		grid-gap: 2vw;
+		& .leftOneThirdBlock  {
+			grid-area: right;
+			margin-left: auto;
+   		 	margin-right: 4vw;
+    		margin-top: 2rem;
+		}
+		& .rightTwoThirdsBlock  {
+			grid-area: left;
+			padding: 0 5vw;
+		}
+		& .ctaButton {
+	grid-area: cta;
+	width: 40vw;
+	margin-left: auto;
+	margin-right: auto;
+		}
+
+	}
+	}
+}

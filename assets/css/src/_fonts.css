@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'Impact', sans-serif;
+	src: url(../../../assets/fonts/Impact.ttf);
+	font-display: swap;
+   }
+
+   @font-face {
+	font-family: 'Homemade Apple', cursive;
+	src: url(../../../assets/fonts/HomemadeApple.ttf);
+	font-display: swap;
+   }

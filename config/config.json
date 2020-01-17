@@ -1,1 +1,16 @@
-{}
+{
+  "theme": {
+      "slug": "thebrandaidshow",
+      "name": "The Brand Aid Show",
+      "author": "Daniel Bisett",
+      "PHPNamespace": "WP_Rig\\WP_Rig"
+    },
+    "dev": {
+      "browserSync": {
+        "live": true,
+        "proxyURL": "wprig-brand:8888",
+        "bypassPort": "8196",
+        "https": false
+      }
+}
+}
