@@ -30,5 +30,8 @@ wp_rig()->print_styles( 'wp-rig-content' );
 
 		?>
 	</main><!-- #primary -->
+	<section class="blogPosts">
+
+	</section><!-- blogPosts -->
 <?php
 get_footer();
